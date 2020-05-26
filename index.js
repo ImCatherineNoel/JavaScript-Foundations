@@ -46,7 +46,7 @@ When your math is correct, monthlyRate will equal 1073.64
 //      M           = P           [ I                         ( 1 + I )             ^N ]      / [       ( 1 + I )           ^N      – 1 ]
 
 
-let monthlyRate = Math.round (principal * (monthlyInterestRate * Math.pow((1 + monthlyInterestRate),periods)) / (Math.pow((1 + monthlyInterestRate),periods) - 1));
+let monthlyRate = principal * (monthlyInterestRate * Math.pow((1 + monthlyInterestRate),periods)) / (Math.pow((1 + monthlyInterestRate),periods) - 1);
 
 console.log("Task 2 variables are set as follows:");
 console.log("The monthly rate is: " + monthlyRate +" and should be 1073.64");
@@ -63,6 +63,19 @@ console.log("The monthly rate is: " + monthlyRate +" and should be 1073.64");
 If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly rate is 1073.64"
 */
 
+    function mortgageCalculator(){
+        let principal = 200000;
+        let interestRate = 0.05;
+        let years = 30;
+        let name = "Catherine";
+        let monthlyInterestRate = interestRate / 12;
+        let periods = years * 12; 
+        let monthlyRate = principal * (monthlyInterestRate * Math.pow((1 + monthlyInterestRate),periods)) / (Math.pow((1 + monthlyInterestRate),periods) - 1);    
+
+        return(name + ", your monthly rate is " + monthlyRate);
+    }
+
+    console.log(mortgageCalculator());
 
 
 
@@ -75,7 +88,19 @@ For example,
 mortgageCalculator(200000, 0.05, 30); <-- should return 1,073.64
 */
 
+function mortgageCalculator2(P, I, N){
+    let principal = P;
+    let interestRate = I;
+    let years = 30;
+    let name = N;
+    let monthlyInterestRate = interestRate / 12;
+    let periods = years * 12; 
+    let monthlyRate = principal * (monthlyInterestRate * Math.pow((1 + monthlyInterestRate),periods)) / (Math.pow((1 + monthlyInterestRate),periods) - 1);    
 
+    return(name + ", your monthly rate is " + monthlyRate);
+}
+
+console.log(mortgageCalculator2(200000, 0.05, "Catherine"));
 
 
 
