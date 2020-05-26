@@ -1,8 +1,20 @@
 // 🌟🌟🌟 M V P 🌟🌟🌟//
 
 // 🏡 Task 1: Variables
-/* Create variables for principal, interest rate, and years. Assign them the values 200000, 0.05, and 30 respectively. Create another value called name and give it the value of your own name.
+/* Create variables for principal, interest rate, and years. Assign them the values 200000, 0.05, and 30 respectively. 
+Create another value called name and give it the value of your own name.
 */
+    let principal = 200000;
+    let interestRate = 0.05;
+    let years = 30;
+    let name = "Catherine";
+    
+
+        console.log("Task 1 variables are set as follows:");
+        console.log("principal: " + principal);
+        console.log("interestRate: " + interestRate);
+        console.log("years: " + years);
+        console.log("name: " + name);
 
 
 
@@ -15,19 +27,32 @@ Create a variable called `monthlyInterestRate` and give it the value of interest
 
 Create another variable called `periods` and give it the value of years*12.
 */
-
-
-
+    let monthlyInterestRate = interestRate / 12;
+    let periods = years * 12; 
+    
+                console.log("Task 1.5 variables are set as follows:");
+                console.log("monthlyInterestRate: " + monthlyInterestRate);
+                console.log("periods: " + periods);    
 
 // 🏡 Task 2: Harder Math
 /* Create your calculator! Use the formula in the ReadMe to run calculations on your numbers. Save the final value into a variable called monthlyRate.
-
 Hint: while these calculations can be done in one line, it might be helpful to create a variable called "numerator" to calculate the numerator, and another called "denominator" to calculate the denominator 
-
+`P` = Principal amount (the total amount borrowed)
+`I` = Interest rate on the mortgage
+`N` = Number of periods (monthly mortgage payments)
 Hint #2: you'll need to use the `math` object for parts of this calculation!
-
 When your math is correct, monthlyRate will equal 1073.64
 */
+//      M           = P           [ I                         ( 1 + I )             ^N ]      / [       ( 1 + I )           ^N      – 1 ]
+
+
+let monthlyRate = Math.round (principal * (monthlyInterestRate * Math.pow((1 + monthlyInterestRate),periods)) / (Math.pow((1 + monthlyInterestRate),periods) - 1));
+
+console.log("Task 2 variables are set as follows:");
+console.log("The monthly rate is: " + monthlyRate +" and should be 1073.64");
+
+
+
 
 
 
@@ -37,6 +62,7 @@ When your math is correct, monthlyRate will equal 1073.64
 
 If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly rate is 1073.64"
 */
+
 
 
 
