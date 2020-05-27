@@ -4,17 +4,17 @@
 /* Create variables for principal, interest rate, and years. Assign them the values 200000, 0.05, and 30 respectively. 
 Create another value called name and give it the value of your own name.
 */
-    let principal = 200000;
-    let interestRate = 0.05;
-    let years = 30;
-    let name = "Catherine";
-    
+                    // let principal = 200000;
+                    // let interestRate = 0.05;
+                    // let years = 30;
+                    // let name = "Catherine";
+                    
 
-        console.log("Task 1 variables are set as follows:");
-        console.log("principal: " + principal);
-        console.log("interestRate: " + interestRate);
-        console.log("years: " + years);
-        console.log("name: " + name);
+                    //     console.log("Task 1 variables are set as follows:");
+                    //     console.log("principal: " + principal);
+                    //     console.log("interestRate: " + interestRate);
+                    //     console.log("years: " + years);
+                    //     console.log("name: " + name);
 
 
 
@@ -27,12 +27,12 @@ Create a variable called `monthlyInterestRate` and give it the value of interest
 
 Create another variable called `periods` and give it the value of years*12.
 */
-    let monthlyInterestRate = interestRate / 12;
-    let periods = years * 12; 
-    
-                console.log("Task 1.5 variables are set as follows:");
-                console.log("monthlyInterestRate: " + monthlyInterestRate);
-                console.log("periods: " + periods);    
+                    // let monthlyInterestRate = interestRate / 12;
+                    // let periods = years * 12; 
+                    
+                    //             console.log("Task 1.5 variables are set as follows:");
+                    //             console.log("monthlyInterestRate: " + monthlyInterestRate);
+                    //             console.log("periods: " + periods);    
 
 // 🏡 Task 2: Harder Math
 /* Create your calculator! Use the formula in the ReadMe to run calculations on your numbers. Save the final value into a variable called monthlyRate.
@@ -46,10 +46,10 @@ When your math is correct, monthlyRate will equal 1073.64
 //      M           = P           [ I                         ( 1 + I )             ^N ]      / [       ( 1 + I )           ^N      – 1 ]
 
 
-let monthlyRate = principal * (monthlyInterestRate * Math.pow((1 + monthlyInterestRate),periods)) / (Math.pow((1 + monthlyInterestRate),periods) - 1);
+// let monthlyRate = principal * (monthlyInterestRate * Math.pow((1 + monthlyInterestRate),periods)) / (Math.pow((1 + monthlyInterestRate),periods) - 1);
 
-console.log("Task 2 variables are set as follows:");
-console.log("The monthly rate is: " + monthlyRate +" and should be 1073.64");
+// console.log("Task 2 variables are set as follows:");
+// console.log("The monthly rate is: " + monthlyRate +" and should be 1073.64");
 
 
 
@@ -63,19 +63,19 @@ console.log("The monthly rate is: " + monthlyRate +" and should be 1073.64");
 If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly rate is 1073.64"
 */
 
-    function mortgageCalculator(){
-        let principal = 200000;
-        let interestRate = 0.05;
-        let years = 30;
-        let name = "Catherine";
-        let monthlyInterestRate = interestRate / 12;
-        let periods = years * 12; 
-        let monthlyRate = principal * (monthlyInterestRate * Math.pow((1 + monthlyInterestRate),periods)) / (Math.pow((1 + monthlyInterestRate),periods) - 1);    
+                    // function mortgageCalculator(){
+                    //     let principal = 200000;
+                    //     let interestRate = 0.05;
+                    //     let years = 30;
+                    //     let name = "Catherine";
+                    //     let monthlyInterestRate = interestRate / 12;
+                    //     let periods = years * 12; 
+                    //     let monthlyRate = principal * (monthlyInterestRate * Math.pow((1 + monthlyInterestRate),periods)) / (Math.pow((1 + monthlyInterestRate),periods) - 1);    
 
-        return(name + ", your monthly rate is " + monthlyRate);
-    }
+                    //     return(name + ", your monthly rate is " + monthlyRate);
+                    // }
 
-    console.log(mortgageCalculator());
+                    // console.log(mortgageCalculator());
 
 
 
@@ -88,19 +88,19 @@ For example,
 mortgageCalculator(200000, 0.05, 30); <-- should return 1,073.64
 */
 
-function mortgageCalculator2(P, I, N){
-    let principal = P;
-    let interestRate = I;
-    let years = 30;
-    let name = N;
-    let monthlyInterestRate = interestRate / 12;
-    let periods = years * 12; 
-    let monthlyRate = principal * (monthlyInterestRate * Math.pow((1 + monthlyInterestRate),periods)) / (Math.pow((1 + monthlyInterestRate),periods) - 1);    
+                        // function mortgageCalculator(p, iR, n){
+                        //     let principal = p;
+                        //     let interestRate = iR;
+                        //     let years = 30;
+                        //     let name = n;
+                        //     let monthlyInterestRate = interestRate / 12;
+                        //     let periods = years * 12; 
+                        //     let monthlyRate = principal * (monthlyInterestRate * Math.pow((1 + monthlyInterestRate),periods)) / (Math.pow((1 + monthlyInterestRate),periods) - 1);    
 
-    return(name + ", your monthly rate is " + monthlyRate);
-}
+                        //     return(name + ", your monthly rate is " + monthlyRate);
+                        // }
 
-console.log(mortgageCalculator2(200000, 0.05, "Catherine"));
+                        // console.log(mortgageCalculator(200000, 0.05, "Catherine"));
 
 
 
@@ -111,6 +111,35 @@ Then, add control flow within your function such that IF creditScore is above 74
 */
 
 
+
+                        // function mortgageCalculator(p, iR, n, cS){ 
+                        //     let principal = p;
+                        //     let years = 30;
+                        //     let interestRate = iR;
+                        //     let name = n;
+                        //     let creditScore= cS;
+                            
+                        //     let periods = years * 12;     
+
+                        //     if (cS > 740) {
+                        //     interestRate = iR - (iR * .005);
+                        //     }
+                        //     else if (cS < 660) {
+                        //     interestRate = iR + (iR * .005);
+                        //     }
+                        //     let monthlyInterestRate = interestRate / 12;
+
+                        //     let monthlyRate = principal * (monthlyInterestRate * Math.pow((1 + monthlyInterestRate),periods)) / (Math.pow((1 + monthlyInterestRate),periods) - 1);    
+
+                            
+                        //     return(name + ", your monthly rate is " + monthlyRate);
+                        // }
+
+
+
+                        // console.log(mortgageCalculator(200000, 0.05, "Catherine - No change",700));
+                        // console.log(mortgageCalculator(200000, 0.05, "Catherine - Higher Rate",77));
+                        // console.log(mortgageCalculator(200000, 0.05, "Catherine - Lower Rate",7777));
 
 
 // 🏡 Task 6: Loops
