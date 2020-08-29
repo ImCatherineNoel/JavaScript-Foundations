@@ -1,4 +1,4 @@
-# JavaScript-Foundations
+TO-Do# JavaScript-Foundations
 
 The module challenge is the afternoon project or assignment that students work through independently. This expands on the guided project completed earlier with the instructor.
 
@@ -40,14 +40,14 @@ Check out the resources below for more of a step-by-step walk-through of this ma
 
 ## Instructions
 
-### Task 1: Set up Project
+[ - DONE - ] ### Task 1: Set up Project
 
 Using VSCode and Command Line:
 
-=== Done ===    1. Fork repo and add TL as collaborator on Github.
-=== Done ===    2. Clone your fork (not Lambda's repo by mistake!).
-=== Done ===    3. `cd` into your newly cloned repository.
-=== Done ===    4. Create a new branch by typing `git checkout -b <firstName-lastName>`.
+[ - DONE - ] Fork repo and add TL as collaborator on Github.
+[ - DONE - ] Clone your fork (not Lambda's repo by mistake!).
+[ - DONE - ] `cd` into your newly cloned repository.
+[ - DONE - ] Create a new branch by typing `git checkout -b <firstName-lastName>`.
 
 ### Task 2: Complete MVP Requirements
 
